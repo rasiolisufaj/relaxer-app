@@ -34,7 +34,6 @@ body {
   border-radius: 50%;
   position: absolute;
   z-index: -1;
-  border: 1px solid green;
 }
 
 .gradient-circle {
@@ -63,8 +62,20 @@ body {
 
 .pointer-container {
   width: 20px;
-  height: 20px;
+  height: 190px;
   position: absolute;
   top: -40px;
   left: 140px;
+  animation: rotate 7.5s linear infinite forwards;
+  transform-origin: bottom center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }

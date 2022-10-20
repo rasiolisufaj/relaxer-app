@@ -25,6 +25,7 @@ body {
   align-items: center;
   margin: auto;
   position: relative;
+  /* transform: scale(1); */
 }
 
 .circle {
@@ -77,5 +78,31 @@ body {
 
   to {
     transform: rotate(360deg);
+  }
+}
+
+.container.grow {
+  animation: grow 3s linear forwards;
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.container.shrink {
+  animation: shrink 3s linear forwards;
+}
+
+@keyframes shrink {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
   }
 }
